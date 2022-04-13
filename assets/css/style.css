@@ -1,0 +1,365 @@
+@font-face{
+    font-family: "Rockwell";
+    src: url("../font/Rockwell.eot");
+    src: local("Rockwell"),
+        url("../font/Rockwell.ttf") format('truetype'),
+        url('../font/Rockwell.woff') format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-weight: bold;
+}
+
+h2, 
+h3, 
+h4,
+h5,
+.rockwell{
+    font-family: "Rockwell";
+    color: rgb(98 98 98);
+}
+
+p, ul{
+    color: rgb(132, 132, 132);
+}
+
+ul{
+    list-style: none;
+}
+
+
+/*
+    *** HEADER ***
+*/
+header{
+    background-image: linear-gradient(to top right, rgba(234,145,145,.8), rgba(74,70,150,.8)),url('../images/photo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top:2rem;
+}
+
+header::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    transform: rotate(45deg);
+}
+
+header section:first-child input{
+    display: none;
+}
+
+header section:first-child nav{
+    width: 30%;
+}
+
+header section:first-child nav ul li a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header section:last-child{
+    padding: 8rem 0 10rem;
+}
+
+header section:last-child a{
+    color: #EA9191;
+    text-decoration: none;
+    background-color: white;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+}
+/*
+    *** MAIN ***
+*/
+/* main de la HOME */
+#home .concept{
+    padding-top: 10rem;
+}
+
+#home .concept h2{
+    color: #4B4975;
+    padding-left: 35%;
+    margin-right: 15%;
+    line-height: 3rem;
+    position: relative;
+}
+
+#home .concept h2::before{
+    content:'';
+    width: 230px;
+    height: 200px;
+    background-image: url('../images/grain.png');
+    background-color: #E6B331;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 4rem;
+    top: -6rem;
+    z-index: -1;
+}
+
+#home .concept article{
+    padding:0 1rem 1rem 1.5rem;
+}
+
+#home .concept article img{
+    height: 30px;
+    margin-top: -.6rem;
+    margin-left: -2rem;
+    margin-right: .6rem;
+}
+
+#home .produitsHome{
+    padding: 3rem 0 2rem;
+    border-radius: 40px;
+}
+
+#home .produitsHome h2{
+    color: #EA9191;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#home .produitsHome article img{
+    width: 50%;
+    margin-bottom: 1.5rem;
+}
+/*
+    *** FOOTER ***
+*/
+footer{
+    background: linear-gradient(
+        to top right,
+        #4B4975,
+        20%,
+        #EA9191,
+        #E6B331
+    );
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+footer h2{
+    color:white;
+}
+footer h2::after{
+    content: '';
+    display: block;
+    background-color: white;
+    width: 1px;
+    height: 30px;
+    margin-left: 20px;
+}
+.mail {
+    
+    background-color: white;
+    width: 60px;
+    height: 1px;
+    margin : 0 5px;
+}
+.adress::before{
+    content:'';
+    display: block ;
+    width: 1px;
+    height: 40px;
+    background-color: white;
+    margin-left: 55px;
+    margin-bottom: 20px;
+}
+footer img{
+    height: 40px;
+}
+
+
+
+footer .adress{
+    width: 40%;
+    text-align: center;
+    margin: 1rem 0 1rem 5rem;
+    color: white;
+}
+
+footer article ul{
+    width: 55%;
+    margin-top: 2rem;
+}
+
+footer form input,
+footer form textarea{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(255,255,255,.3);
+    color: white;
+}
+
+footer form input::placeholder,
+footer form textarea::placeholder{
+    color: white;
+}
+
+footer form button{
+    background-color: #EA9191;
+    color: white;
+    border:none;
+    border-radius: 40px;
+    padding: 1rem 2rem;
+    
+}
+.footer-border {
+    width: 50%;
+    height: 1px;
+    background-color: white;
+}
+
+
+
+/* *** SECTION PRODUIT *** */
+
+.product img {
+width: 50%;
+margin-top: 2rem;
+}
+
+.title-product {
+   color :  #B6767B
+}
+.section-product{
+ 
+    box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.21);
+    -moz-box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.21);
+}
+
+/* PAGE PRODUITS */
+
+.granola {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* PAGE PRODUIT */
+
+
+
+
+/*
+    *** RESPONSIVE ***
+*/
+/* version mobile */
+@media screen and (max-width:767px){
+    
+    /* burger */
+    header section:first-child img{
+        width: 80%;
+    }
+
+    header section:first-child input{
+        display: block;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        color: #E6B331;
+        font-size: 2rem;
+    }
+
+    header section:first-child .burger::before{
+        content:'\f0c9';
+    }
+
+    header section:first-child .burger:checked::before{
+        content:'\f00d';
+    }
+
+    header section:first-child .burger:checked+nav{
+        display: block;
+    }
+    
+    header section:first-child nav{
+        display: none;
+        width: 100%;
+        background-color: #E6B331;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin-top: 7rem;
+    }
+
+    header section:first-child nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    header section:first-child nav ul li{
+        padding: 1rem 0;
+    }
+
+    /* main home */
+    #home{
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+
+    #home .concept h2 {
+        padding-left: 0;
+        margin-right: 0;
+        width: 64%;
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    #home .concept h2::before{
+        left: -2rem;
+    }
+
+    #home .produitsHome article{
+        margin-bottom: 2rem;
+    } 
+
+    /* footer */
+    footer{
+        padding-left:0.5rem;
+        padding-right:0.5rem;
+    }
+
+    footer .adress{
+        width: 35%;
+    }
+
+    footer article ul{
+        width: 100%;
+    }
+.barre{
+display: block
+
+
+}
+}
